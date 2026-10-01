@@ -1,0 +1,196 @@
+/* =========================
+   LEFT SIDEBAR
+========================= */
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+    position: fixed;
+
+    top: var(--header-height);
+    left: 0;
+
+    height: calc(100vh - var(--header-height));
+
+    padding: 8px;
+
+    background-color: var(--bg-body);
+
+    overflow-y: auto;
+}
+
+
+/* =========================
+   SIDEBAR NAV
+========================= */
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   SIDEBAR ITEM
+========================= */
+
+.sidebar-item {
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 5px 8px;
+
+    border-radius: var(--radius-card);
+
+    color: var(--text-primary);
+
+    text-decoration: none;
+
+    transition: background-color 0.15s ease;
+}
+
+
+.sidebar-item:hover {
+    background-color: var(--bg-hover);
+}
+
+
+/* Icons */
+
+.sidebar-item i {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-size: 21px;
+
+    color: var(--brand-blue);
+}
+
+
+/* Text */
+
+.sidebar-item span {
+    font-weight: 600;
+
+    font-size: 15px;
+
+    line-height: 1.2;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    padding: 5px 8px;
+
+    gap: 10px;
+}
+
+
+.profile img {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.sidebar-divider {
+    height: 1px;
+
+    margin: 8px 8px;
+
+    background-color: var(--border-color);
+}
+
+
+/* =========================
+   SHORTCUTS
+========================= */
+
+.shortcuts {
+    padding: 5px 0;
+}
+
+
+.shortcuts h3 {
+    padding: 5px 8px 8px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: var(--text-secondary);
+}
+
+
+.shortcuts img {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   RIGHT SIDEBAR
+========================= */
+
+/* =========================
+   RIGHT SIDEBAR
+========================= */
+
+.right-sidebar {
+    position: fixed;
+    right: 0px;
+    height: calc(100vh - var(--header-height));
+    width: 250px;
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 20px;
+}
+
+.messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+
+}
+
+.messages i{
+    font-size: 20px;
+}

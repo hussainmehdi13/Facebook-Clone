@@ -1,0 +1,230 @@
+/* =================================
+   TABLET
+   ================================= */
+
+@media (max-width: 1170px) {
+
+    .left-sidebar,
+    .right-sidebar,
+    .header-center {
+        display: none;
+    }
+
+    /* .header-center .dashboard,
+    .header-center .gaming {
+        display: none;
+    } */
+
+    
+
+    .main-container {
+        justify-content: center;
+    }
+
+    .feed {
+        width: 100%;
+        max-width: 590px;
+        padding: 10px 15px;
+    }
+
+    .create-post {
+        gap: 10px;
+    }
+
+    .post-input {
+        width: 350px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+   ================================= */
+
+@media (max-width: 550px) {
+
+    .header {
+        padding: 0 10px;
+    }
+
+    .header-left {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-left > a {
+        font-size: 32px;
+        display: none;
+    }
+
+    .searchbar-input {
+        display: none;
+    }
+
+    
+     .search-bar { 
+        width: 40px;
+        height: 40px;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+    } 
+
+    .header-center {
+        display: none;
+    }
+
+    .header-right {
+        width: auto;
+        gap: 4px;
+    }
+
+    .header-right button {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hamburgar{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hamburgar i{
+        font-size: 22px;
+    }
+
+    .header-right .menu{
+        display: none;
+    }
+
+
+    /* Feed */
+
+    .feed {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px;
+        gap: 8px;
+    }
+
+
+    /* Create Post */
+
+    .create-post {
+        height: auto;
+        padding: 10px;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .create-newpost {
+        width: 100%;
+    }
+
+    .post-input {
+        width: 100px;
+        max-width: 400px;
+    }
+
+
+    .post-actions> :first-child,
+    .post-actions> :last-child{
+        display: none;
+    }
+
+    .post-actions button {
+        flex: 1;
+    }
+
+
+    /* Stories */
+
+    .stories {
+        gap: 8px;
+    }
+
+    .story {
+        width: 110px;
+        height: 165px;
+        /* border: 2px solid red; */
+    }
+
+
+    /* Post */
+
+    .post-header {
+        padding: 8px;
+    }
+
+    .description {
+        padding: 0 10px;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .post-interactions {
+        padding: 5px;
+    }
+
+    .post-interactions .post-button {
+        /* flex: 1; */
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+   ================================= */
+
+@media (max-width: 380px) {
+
+    .header-left > a {
+        font-size: 20px;
+    }
+
+    .header-right button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .header-right .account{
+        display: none;
+    }
+
+    .feed {
+        padding: 5px;
+    }
+
+    .story {
+        width: 105px;
+        height: 160px;
+    }
+
+    .post {
+        border-radius: 8px;
+    }
+
+    .post-header {
+        padding: 8px;
+    }
+
+    .about-author h5 {
+        font-size: 14px;
+    }
+
+    .about-author p {
+        font-size: 12px;
+    }
+}
