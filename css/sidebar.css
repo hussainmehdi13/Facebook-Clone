@@ -170,6 +170,7 @@
 .right-sidebar {
     position: fixed;
     right: 0px;
+    top: var(--header-height);
     height: calc(100vh - var(--header-height));
     width: 250px;
 

@@ -19,17 +19,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
+    margin: 0;
     background-color: var(--bg-body);
     color: var(--text-primary);
 }
 
-.main-container{
+.main-container {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
     display: flex;
     justify-content: center;
+
     padding-top: var(--header-height);
+
     min-height: 100vh;
+    box-sizing: border-box;
 }
+
 
 .avatar-sm {
     width: 40px;

@@ -1,7 +1,8 @@
+
+
 /* =================================
    TABLET
    ================================= */
-
 @media (max-width: 1170px) {
 
     .left-sidebar,
@@ -34,6 +35,11 @@
     .post-input {
         width: 350px;
     }
+
+
+    .mobile-overlay {
+        display: none;
+    }
 }
 
 
@@ -44,6 +50,7 @@
 @media (max-width: 550px) {
 
     .header {
+        position: fixed;
         padding: 0 10px;
     }
 
@@ -64,9 +71,11 @@
     }
 
     
-     .search-bar { 
-        width: 40px;
-        height: 40px;
+    .search-bar { 
+        position:absolute;
+        right: 136px;
+        width: 38px;
+        height: 38px;
         padding: 0;
 
         display: flex;
@@ -100,10 +109,42 @@
         font-size: 22px;
     }
 
+    .hamburgar.active {
+        background-color: var(--bg-hover);
+        border-radius: 8px;
+    }
+
     .header-right .menu{
         display: none;
     }
 
+    /* sidebar */ 
+    .mobile-overlay {
+        position: fixed;
+        top: var(--header-height);
+        left: 280px;
+        right: 0;
+        height: calc(100vh - var(--header-height));
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 998;
+    }
+
+    .mobile-overlay.active {
+        display: block;
+    }
+
+    .left-sidebar.mobile-open {
+        display: block;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 280px;
+        height: calc(100vh - var(--header-height));
+        background-color: var(--bg-card);
+        z-index: 999;
+        padding: 16px;
+        overflow-y: auto;
+    }
 
     /* Feed */
 
@@ -193,6 +234,13 @@
     .header-left > a {
         font-size: 20px;
     }
+
+    .search-bar {
+        right:90px;
+        width: 36px;
+        height: 36px;
+    }
+
 
     .header-right button {
         width: 36px;
